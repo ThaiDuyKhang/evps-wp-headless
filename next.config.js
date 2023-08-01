@@ -2,7 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'thaiduykhang.id.vn',
+        port: '',
+        pathname: '/wp-content/uploads/**',
+      },
+    ],
   },
 };
 
